@@ -1,0 +1,225 @@
+.footer-white{
+    background-color: white !important;
+    transform: none !important;
+}
+.footer-link-green{
+    color: #33c350 !important ;
+    @extend %main-font;
+}
+.greenrp{
+    margin-top: 10px;
+    color: black;
+    @extend %main-font;
+}
+
+.greend-dispat{
+ margin-bottom: 10px;
+}
+
+.header-perenos{
+    background-size: cover;
+    position: absolute;
+    width: 100%;
+    z-index: 999;
+    top: 0;
+    background-image: url(../img/header-skill.png);
+}
+
+.wrapper-new{
+    background-image: url(../img/header-skill.png);
+    background-size: cover;
+}
+
+.perenos-title{
+    text-align: center;
+    color: white;
+    @extend %semi-font;
+    font-size: 64px;
+    padding-top: 150px;
+}
+.perenos-blocks{
+    padding: 70px 180px 100px 140px;
+    display: flex;
+justify-content: space-between;
+}
+
+
+.left-block{
+    h1{
+        color: white;
+        @extend %other-font;
+        font-size: 20px;
+    }
+    .form-log{
+        margin-top: 25px;
+        display: flex;
+        flex-direction: column;
+        .input-log{
+            background-color: rgb(255, 255, 255);
+            border-radius: 21px;
+            width: 776px;
+            height: 100px;
+            border: none;
+            outline: none;
+            padding-left: 85px;
+            font-size: 24px;
+            color: #193a23;
+            @extend %other-font;
+            &:nth-child(2){
+                margin: 25px 0px;
+            }
+         
+              
+        }
+    }
+}
+
+.input-log::placeholder{
+    color: #193a23;
+    @extend %other-font;
+    font-size: 24px;
+  
+}
+.input-person{
+    position: relative;
+    img{
+        position: absolute;
+        left:20px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
+.perenesti{
+    border: none;
+    background: transparent;
+}
+
+.zayva{
+    span{
+        font-size: 20px;
+        @extend %other-font;
+        position: relative;
+        color: white;
+        padding-left: 35px;
+        &::before{
+            position: absolute;
+            content: "";
+            background-image: url(../img/white-kalendar.png);
+            left: 0;
+            bottom: 0;
+            right: 0;
+            top: 0;
+            background-repeat: no-repeat;
+        }
+    }
+}
+
+
+
+.accordion {
+    color: #fff;
+    cursor: pointer;
+    padding: 16px 16px 16px 25px;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 18px;
+    transition: all 0.5s;
+    background:linear-gradient(90deg, rgb(0,88,41) 0%, rgb(0,154,72) 50%, rgb(0,121,57) 74%, rgb(0,88,41) 100%) ;
+    width: 519px;
+    height: 57px;
+    border-radius: 25px;
+    @extend %other-font;
+    box-shadow:0px 0px 7px 8px rgba(0, 121, 57, 1);
+
+    
+ 
+}
+
+
+
+
+.active, .accordion:hover {
+    background-color: #607D8B;
+}
+
+.accordion:after {
+    content: url(../img/rescx.png);
+    color: #fff;
+  font-size: 18px;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+    transition: all .2s linear;
+ 
+}
+
+
+  
+.active:after {
+    content: url(../img/rescx.png);
+   transform: rotate(-180deg);
+   transition: all .2s linear;
+}
+
+.panel {
+    margin-top: 5px;
+    margin: -5px auto 50px auto;
+    padding: 0px 30px 0px 30px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.439);
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+  
+    width: 496px;
+    @extend %other-font;
+    border-radius: 10px;
+    p{
+        margin: 15px 0px;
+    }
+}
+
+
+.blockinput-file{
+    position: relative;
+    width: 453px;
+    height: 63px;
+    background-color: #fff;
+    border-radius: 35px;
+    &:not(:last-child){
+        margin-bottom: 15px;
+    }
+    
+    img{
+        position: absolute;
+        left: 20px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    
+    label{
+        color: #005829;
+        @extend %semi-font;
+        padding-left: 80px;
+        cursor: pointer;
+    }
+    p{
+        color: black;
+        @extend %semi-font;
+        padding-left: 80px;
+        padding-top: 5px;
+    }
+    .files-text{
+padding: 10px 0px;
+    }
+}
+input[type='file']{
+    display: none;
+}
+
+
+
+
+
+  

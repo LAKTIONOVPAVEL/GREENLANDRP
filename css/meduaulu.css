@@ -1,0 +1,18 @@
+@media (max-width: 750px) {
+  .uluchblock-btns {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 450px) {
+  .uluchblock-item:not(:last-child) {
+    margin-bottom: 25px;
+  }
+  .addresoursers-blocks {
+    -webkit-transform: translateX(none) !important;
+            transform: translateX(none) !important;
+  }
+}
